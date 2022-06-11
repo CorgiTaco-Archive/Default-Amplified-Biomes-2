@@ -1,11 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "corgitaco.modid.mixin",
+  "package": "corgitaco.defaultamplifiedbiomes2.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "modid.refmap.json",
+  "refmap": "defaultamplifiedbiomes2.refmap.json",
   "mixins": [
-    "ExampleMixin"
+    "MixinMinecraftServer"
   ],
   "client": [
   ],

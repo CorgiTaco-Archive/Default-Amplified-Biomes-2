@@ -1,19 +1,19 @@
 modLoader = "javafml"
 loaderVersion = "[33,)"
 license = "LGPLv3"
-issueTrackerURL = ""
+issueTrackerURL = "https://github.com/CorgiTaco/Default-Amplified-Biomes-2/issues"
 [[mods]]
-modId = "modid"
+modId = "defaultamplifiedbiomes2"
 version = "1.0"
-displayName = "Mod ID"
+displayName = "Default Amplified Biomes 2"
 displayURL = ""
 logoFile = "icon.png"
 credits = ""
 authors = "Corgi Taco"
 description = '''
-Description
+Amplified Biomes in the default world type!
 '''
-[[dependencies.modid]]
+[[dependencies.defaultamplifiedbiomes2]]
 modId = "forge"
 mandatory = true
 versionRange = "[33.0.0,)"
