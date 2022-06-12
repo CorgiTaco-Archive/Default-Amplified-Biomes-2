@@ -110,7 +110,7 @@ public class DABConfig {
         DefaultAmplifiedBiomes2.LOGGER.info(String.format("\"%s\" was read.", path.toString()));
 
         try {
-            DataResult<Pair<DABConfig, JsonElement>> decode = CODEC.decode(JsonOps.INSTANCE, JsonParser.parseReader(new FileReader(path.toFile())));
+            DataResult<Pair<DABConfig, JsonElement>> decode = CODEC.decode(JsonOps.INSTANCE, new JsonParser().parse(new FileReader(path.toFile())));
             if (decode.error().isPresent()) {
                 throw new IllegalArgumentException(String.format("Config loading failed for: %s\nReason: %s", path.toString(), decode.error().get().message()));
             }
